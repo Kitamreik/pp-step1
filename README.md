@@ -1,7 +1,7 @@
 # pp-step1
 This is the brainstorm for the first step in the CodeSquad PP.
 
-#Document Link: https://docs.google.com/document/d/1uqegOk0C1bEAELsacIPkOF4BbUy2BKfqOtwr19-rzGI/edit?usp=sharing 
+# Document Link: https://docs.google.com/document/d/1uqegOk0C1bEAELsacIPkOF4BbUy2BKfqOtwr19-rzGI/edit?usp=sharing 
 
 ## Project 1: Replication of a Regional Group
 
