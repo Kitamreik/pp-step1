@@ -1,0 +1,77 @@
+/* body {
+
+} */
+
+:root {
+    --indigo-dye:var(--indigo-dye) #023B58;
+    --blue-munsell:var(--blue-munsell) #0091AD;
+    --electric-blue:var(--electric-blue) #6EFAFB;
+    --cosmic-latte:var(--cosmic-latte)#FFF4E4;
+    --medium-champagne:var(--medium-champagne)#F7E8A4;
+    --hot-pink:var(--hot-pink)#FF57BB;
+    --heliotrope-gray:var(--heliotrope-gray)#023B58;
+}
+
+/* Test Code 3-9-22 [DOES WORK] */
+/* section {
+    background-color: #F7E8A4;
+} */
+
+/* One long comment - from line 10 to 64, when you uncomment */
+/* h1, h2, p {
+
+}
+
+img {
+
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+.border {
+    Define the class
+}
+
+h3 {
+
+}
+
+.nav.bar {
+    Define the class
+}
+
+.link-styling {
+    Define the class
+}
+
+.content-container {
+    Define the class
+}
+
+.content-container-2 {
+    Define the class
+}
+
+.center-text {
+    Define the class
+}
+
+table {
+
+}
+
+button-styling {
+
+}
+
+.mini-container {
+    Define the class
+} */
+
+/* Get the CSS for form styling */
