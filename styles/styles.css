@@ -1,15 +1,28 @@
-/* body {
+/* General --> then media query */
 
+/* General/For Everything */
+/* body {
+    width: 100%;
+   max-width: 100vw;
+   margin: auto;
+   overflow-x: hidden;
+   font-size: 1.4rem;
+   height: auto;
+   background-image:
+   font-family: 
 } */
 
 :root {
-    --indigo-dye:var(--indigo-dye) #023B58;
-    --blue-munsell:var(--blue-munsell) #0091AD;
-    --electric-blue:var(--electric-blue) #6EFAFB;
-    --cosmic-latte:var(--cosmic-latte)#FFF4E4;
-    --medium-champagne:var(--medium-champagne)#F7E8A4;
-    --hot-pink:var(--hot-pink)#FF57BB;
-    --heliotrope-gray:var(--heliotrope-gray)#023B58;
+    --indigo-dye: #023B58;
+    --blue-munsell: #0091AD;
+    --electric-blue: #6EFAFB;
+    --cosmic-latte:#FFF4E4;
+    --medium-champagne:#F7E8A4;
+    --hot-pink:#FF57BB;
+    --heliotrope-gray:#023B58;
+    /* the gradient */
+    /* color: var(--);
+    color: var(--); */
 }
 
 /* Test Code 3-9-22 [DOES WORK] */
@@ -17,6 +30,7 @@
     background-color: #F7E8A4;
 } */
 
+/* CP Replika */
 /* One long comment - from line 10 to 64, when you uncomment */
 /* h1, h2, p {
 
@@ -75,3 +89,10 @@ button-styling {
 } */
 
 /* Get the CSS for form styling */
+
+/* Media Query --> specific parameters for css code to operate in */
+/* Mobile Design [mobile container] */
+@media screen and (min-width: 320px) and (max-width: 768px) {}
+
+/* Tablet Design [hamburger] */
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
