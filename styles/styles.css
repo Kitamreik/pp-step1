@@ -1,5 +1,16 @@
 /* General --> then media query */
+ /* the LAST thing is enforced --> cascading */
 /* General/For Everything */
+.mobile-container > .nav-bar li {
+    /* max-width: 768px; */
+    margin: auto;
+    height: 70px;
+    color:var(--heliotrope-gray);
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
 body {
     width: 100%;
     max-width: 100vw;
@@ -111,13 +122,21 @@ h2, p {
 }
 
 /* FOR THE P TAGS */
-.center-text {
+.center-text-paragraph {
     text-align: center;
+    word-wrap: break-word;
 } 
 
-.center-text > li {
+.center-text-line-items > li {
     list-style-type: none;
     text-align: center;
+    padding: 0%;
+} 
+
+.left-text-line-items > li {
+    list-style-type: none;
+    text-align: left;
+    padding: 0%;
 } 
 
 .right-text > li {
@@ -184,7 +203,13 @@ footer {
 
 /* Font Awesome */
 fa-brands {
-    color: var(--medium-champagne);
+    background-color: var(--medium-champagne);
+    color: var(--electric-blue);
+    list-style-type: none;
+    text-align: center;
+    padding: 0%;
+    width: 10%;
+    height: 20%;
 }
 
 fieldset {
@@ -192,14 +217,55 @@ fieldset {
     border-color: var(--cosmic-latte);
 }
 
+*{
+    box-sizing: border-box;
+}
+/* Media Query --> specific parameters for css code to operate in */
+/* Mobile Design [mobile container] */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .mobile-container {
+        display: flex;
+    }
+    .mobile-container > .nav-bar {
+        display: none;
+    }
+    .mobile-container > .hamburger {
+        overflow: visible;
+        position: relative;
+        padding: 14px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .border > div {
+        /* background-color: var(--); */
+        width: auto;
+        color: var(--cosmic-latte);
+        min-width: 420px;
+        margin: auto;
+        overflow: visible;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        }
+}
+    
+/* Tablet Design [hamburger] */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.hamburger {
+    overflow: hidden;
+    position: relative;
+    display: none; 
+    }
+}
 /* ABOVE DONE */
-
-/* READY TO INSERT */
-
-
 
 /* BELOW TO WORK ON */
 /* CP Replika */
+
 /* PHOTO GALLERY */
 /* table {
 
@@ -213,53 +279,6 @@ fieldset {
 /* h3 {
 
 } */
-
-
-
-
-
-
-/* Media Query --> specific parameters for css code to operate in */
-/* Mobile Design [mobile container] */
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-.mobile-container {
-    display: flex;
-}
-
-.mobile-container > .nav-bar {
-    display: none;
-}
-    /* .mobile-container > .hamburger {
-    overflow: visible;
-    position: relative;
-    padding: 14px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    } */
-    
-    /* the LAST thing is enforced --> cascading */
-
-    /* border > div {
-    background-color: var(--blue);
-    width: auto;
-    color: var(--white);
-    min-width: 420px;
-    margin: auto;
-    overflow: visible;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    } */
-}
-
-
-/* Tablet Design [hamburger] */
-/* @media screen and (min-width: 768px) and (max-width: 1024px) {} */
 
 /* section {
      background-color:var(--light-teal); 
