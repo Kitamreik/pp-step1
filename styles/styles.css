@@ -43,8 +43,8 @@ img {
     width: 100px;
 }
 
-.map-image {
-    width: 80%;
+.photo-image {
+    width: 35%;
     padding: 0%;
 }
 
@@ -91,6 +91,17 @@ header {
     color: var(--indigo-dye);
 }
 
+.content-container-section {
+    margin: 60px;
+    padding: 10px;
+    border-top: solid 5px var(--indigo-dye);
+    border-right: solid 5px var(--indigo-dye);
+    border-bottom: solid 5px var(--indigo-dye);
+    border-left: solid 5px var(--indigo-dye);
+    background-color: var(--medium-champagne);
+    color: var(--heliotrope-gray);
+}
+
 .content-container-2 {
     margin: 30px;
     padding: 20px;
@@ -131,6 +142,10 @@ h2, p {
     text-align: center;
     word-wrap: break-word;
 } 
+
+.expansion {
+    font-size: 1.8rem;
+}
 
 h3 {
     text-align: center;
@@ -278,19 +293,16 @@ fieldset {
 /* ABOVE DONE */
 
 /* BELOW TO WORK ON */
-/* CP Replika */
 
-/* PHOTO GALLERY */
+/* CONTACT US */
 /* table {
 
 } */
-
 /* button-styling {
 
 } */
 
-/* IDK WE'LL SEE */
-
-/* section {
+/* PHOTO GALLERY */
+/* photo-section {
      background-color:var(--light-teal); 
 } */
