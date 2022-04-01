@@ -43,6 +43,11 @@ img {
     width: 100px;
 }
 
+.map-image {
+    width: 80%;
+    padding: 0%;
+}
+
 header {
     background-color: var(--medium-champagne);
     width: auto;
@@ -125,6 +130,15 @@ h2, p {
 .center-text-paragraph {
     text-align: center;
     word-wrap: break-word;
+} 
+
+h3 {
+    text-align: center;
+    margin: 10px auto;
+    padding: 0, 10px;
+    font-style: italic;
+    font-family: 'Fredericka the Great', cursive;
+    color: var(--blue-munsell);
 } 
 
 .center-text-line-items > li {
@@ -276,9 +290,6 @@ fieldset {
 } */
 
 /* IDK WE'LL SEE */
-/* h3 {
-
-} */
 
 /* section {
      background-color:var(--light-teal); 
