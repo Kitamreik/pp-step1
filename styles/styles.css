@@ -244,42 +244,51 @@ fa-brands {
 fieldset {
     display: block;
     border-color: var(--cosmic-latte);
+    /* border: 0 none; */
 }
 
 *{
     box-sizing: border-box;
 }
+
 /* Media Query --> specific parameters for css code to operate in */
 /* Mobile Design [mobile container] */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    .mobile-container {
-        display: flex;
+.mobile-container {
+    display: flex;
+}
+.mobile-container > .nav-bar {
+    display: none;
+}
+.mobile-container > .hamburger {
+    overflow: visible;
+    position: relative;
+    padding: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.border > div {
+    /* background-color: var(--); */
+    width: auto;
+    color: var(--cosmic-latte);
+    min-width: 420px;
+    margin: auto;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     }
-    .mobile-container > .nav-bar {
-        display: none;
+/* Table Responsiveness */
+.side-scroll-mobile {
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: auto;
+    border: solid 5px var(--yellow);
     }
-    .mobile-container > .hamburger {
-        overflow: visible;
-        position: relative;
-        padding: 14px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    .border > div {
-        /* background-color: var(--); */
-        width: auto;
-        color: var(--cosmic-latte);
-        min-width: 420px;
-        margin: auto;
-        overflow: visible;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        }
 }
     
 /* Tablet Design [hamburger] */
@@ -290,6 +299,7 @@ fieldset {
     display: none; 
     }
 }
+
 /* ABOVE DONE */
 
 /* BELOW TO WORK ON */
