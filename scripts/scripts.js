@@ -7,7 +7,7 @@ alert("OMG- Are you ready to see what's going on in this realm of cosmic delicio
 console.log("You're doing a great job, Kit");
 
 // Hamburger JS from CP 
-/* 
+
 // DOM Event Steps:
 
 // 1. select hamburger icon --> event target
@@ -30,5 +30,3 @@ hamburgerIcon.addEventListener("click", () => {
 
 
 
-
-*/

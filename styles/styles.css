@@ -251,14 +251,80 @@ fieldset {
     box-sizing: border-box;
 }
 
+/* Hamburger JS outside media query - works */
+header {
+    display: flex;
+}
+ 
+ /* hides the menu when it's desktop */
+a.menu {
+    display: none;
+}
+ 
+ /* styling the hamburger menu */
+.hamburger {
+    overflow: visible;
+    position: relative;
+    padding: 14px;
+    display: flex;
+    /* display: none; */
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: transparent;
+    border: 0;
+    color: var(--white);
+    font-size: 20px;
+}
+ 
+
 /* Media Query --> specific parameters for css code to operate in */
 /* Mobile Design [mobile container] */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-.mobile-container {
+
+header {
+    display: block;
+}  
+header .header-wrapper {
     display: flex;
+    justify-content: space-between;
+}
+    
+/* this is the link for the hamburger button */
+a.menu {
+    display: block;
+    color: var(--white);
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 0.5rem 1rem;
+}
+.mobile-container {
+    max-width: 768px;
+    margin: auto;
+    height: 150px;
+    color:var(--cosmic-latte);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; 
+    /* display: flex; */
+}
+.open-sesame {
+    display: none;
 }
 .mobile-container > .nav-bar {
     display: none;
+}
+.nav-bar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nav-bar-list a {
+    margin: 20px 10px;
+}
+.nav-bar-list a:hover {
+    color: var(--medium-champagne);
 }
 .mobile-container > .hamburger {
     overflow: visible;
@@ -268,9 +334,11 @@ fieldset {
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: flex-end;
+    height: 120px;
+    width: auto;
 }
 .border > div {
-    /* background-color: var(--); */
+    background-color: var(--blue-munsell);
     width: auto;
     color: var(--cosmic-latte);
     min-width: 420px;
@@ -281,7 +349,8 @@ fieldset {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    }
+}
+
 /* Table Responsiveness */
 .side-scroll-mobile {
     display: flex;
