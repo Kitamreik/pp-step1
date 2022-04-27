@@ -30,6 +30,18 @@ body {
     --medium-champagne:#F7E8A4;
     --hot-pink:#FF57BB;
     --heliotrope-gray:#023B58;
+    /* New Colors 4-27 */
+    --medium-purple: #9D8DF1;
+
+    /* to enclose content */
+    --light-steel-blue: #B8CDF8;
+
+    /* for the card background */
+    --magic-mint: #95F2D9;
+
+    /* for header enhancement */
+    --naples-yellow:  #F9DC5C;
+
     color: var(--blue-munsell);
     color: var(--electric-blue);
 };
@@ -49,7 +61,7 @@ img {
 }
 
 header {
-    background-color: var(--medium-champagne);
+    background-color: var(--naples-yellow);
     width: auto;
     padding-left: 25px; 
     border-bottom: solid 5px var(--heliotrope-gray);
@@ -120,6 +132,17 @@ header {
     align-items: center;
 }
 
+/* for actual enclosed content */
+.content-container-3 {
+    margin: 30px;
+    padding: 20px;
+    border-top: solid 5px var(--indigo-dye);
+    border-right: solid 5px var(--indigo-dye);
+    border-bottom: solid 5px var(--indigo-dye);
+    border-left: solid 5px var(--indigo-dye);
+    background-color: var(--light-steel-blue);
+}
+
 /* .center-text */
 h1 {
     text-align: center;
@@ -128,6 +151,16 @@ h1 {
     font-style: italic;
     font-family: 'Fredericka the Great', cursive;
 } 
+
+/* For the intermediate header in Photo Gallery */
+.title-tinker {
+    text-align: center;
+    margin: 10px auto;
+    padding: 0, 10px;
+    font-style: italic;
+    font-family: 'Fredericka the Great', cursive;
+}
+
 
 /* .center-text */
 h2, p { 
@@ -147,6 +180,7 @@ h2, p {
     font-size: 1.8rem;
 }
 
+/* for card headers */
 h3 {
     text-align: center;
     margin: 10px auto;
@@ -276,7 +310,7 @@ a.menu {
     color: var(--white);
     font-size: 20px;
 }
- 
+
 
 /* Media Query --> specific parameters for css code to operate in */
 /* Mobile Design [mobile container] */
@@ -359,7 +393,52 @@ a.menu {
     border: solid 5px var(--yellow);
     }
 }
-    
+
+/* PHOTO GALLERY */
+/* Cards for People */
+.card {
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+    width: 60%;
+    padding: 2.5%;
+    border-radius: 5px;
+    align-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--magic-mint);
+  }
+  
+.card:hover {
+box-shadow: 0 8px 16px 0;
+}
+
+img:template {
+border-radius: 5px 5px 0 0;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+/* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+}
+
+.card-container {
+padding: 5px 10px;
+width: 60%;
+/* 25 - good for mobile, not desktop, maybe if more cards? */
+/* 57 - the size that works on both*/
+height: 10%;
+text-align: center;
+font-size: 1.45rem;
+display: flex;
+flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+  
 /* Tablet Design [hamburger] */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 .hamburger {
@@ -377,11 +456,8 @@ a.menu {
 /* table {
 
 } */
+
 /* button-styling {
 
 } */
 
-/* PHOTO GALLERY */
-/* photo-section {
-     background-color:var(--light-teal); 
-} */
