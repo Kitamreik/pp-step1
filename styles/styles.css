@@ -31,16 +31,25 @@ body {
     --hot-pink:#FF57BB;
     --heliotrope-gray:#023B58;
     /* New Colors 4-27 */
-    --medium-purple: #9D8DF1;
-
+    --cornflower--blue: #89A1EF;
+    
     /* to enclose content */
     --light-steel-blue: #B8CDF8;
 
     /* for the card background */
     --magic-mint: #95F2D9;
+    --vivid-sky-blue: #32CBFF;
+    --gold-crayola: #EABE7C;
+    --medium-purple: #9D8DF1;
+    --orchid-crayola: #EF9CDA;
 
     /* for header enhancement */
     --naples-yellow:  #F9DC5C;
+
+    /* For the videogallery? */
+    /* 
+    --carolina-blue: #00A5EO;
+    */
 
     color: var(--blue-munsell);
     color: var(--electric-blue);
@@ -407,8 +416,31 @@ a.menu {
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: var(--magic-mint);
   }
+/* Card Colors */
+.mint {
+    background-color: var(--magic-mint);
+}
+
+.vivid-sky-blue {
+    background-color: var(--vivid-sky-blue);
+}
+
+.gold-crayola {
+    background-color: var(--gold-crayola);
+}
+
+/* .cornflower-blue {
+    background-color: var(--cornflower--blue);
+} */
+
+.medium-purple {
+    background-color: var(--medium-purple);
+}
+
+.orchid-crayola {
+    background-color: var(--orchid-crayola);
+}
   
 .card:hover {
 box-shadow: 0 8px 16px 0;
