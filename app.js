@@ -12,12 +12,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine','ejs');
 
 // // Requiring Method Override
-// const methodOverride =  require('method-override');
-// app.use(methodOverride('_method'));
+const methodOverride =  require('method-override');
+app.use(methodOverride('_method'));
 
 // // Adding Functionality to app.js
-// app.use(express.urlencoded({extended: true}));
-// app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 // Mapping out Routes
 app.get('/', (req, res) => {

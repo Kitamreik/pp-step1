@@ -1,42 +1,8 @@
-<!DOCTYPE html>
-<head>
-    <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/032df15d1f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <script defer src="./scripts/scripts.js"></script>
-</head>
-<body>
+<%- include('../partials/head') -%> 
+<!-- Insert header.ejs -->
     <title>Video Showcase of Practitioners</title>
-    <header>
-        <!-- Updated Code 4-25 re: Hamburger Functionality [tested] -->
-        <div class="header-wrapper">
-            <div class = "link-styling mobile-container">
-                <a href="/"></a><img src ="/images/Cookie-logo.png" alt="A picture of an animal, with a cat-like smiling face with a turtle's body is the logo of this website.">
-                </a>
-            </div>
-            <nav class="nav-bar link-styling open-sesame"> 
-                <ul class="nav-bar-list left-text-line-items">
-                    <li><a href="/">Index</a></li>
-                    <li><a href="/videogallery">About</a></li>
-                    <li><a href="/login">Login</a></li>
-                </ul>
-            </nav>
-            <div class = "link-styling mobile-container">
-                <button class = "hamburger">
-                    <a href="javascript:void(0);" class="menu" for="open-sesame">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </button> 
-            </div>
-        </div>
-    </header>
+<%- include('../partials/nav') -%> 
+<!-- Insert nav.ejs -->
 <div class="content-container">
     <section class="content-container-section">
     <h1>Video Showcase of Practitioners</h1>
@@ -50,83 +16,5 @@
         </p>
     </section>
 </div>
-<footer class = "footer"> 
-    <section class = "bottom-row"> 
-        <div class = "border"> 
-            <div>
-                <h2 class = "mini-container">Developer Contact Info</h2>
-                <p class ="center-text-paragraph">A Product of CodeSquad</p>
-                <ul class="center-text-line-items link-styling">
-                    <li><a href="http://codesquad.org" target="'_blank"><img src="/images/CodeSquad-website-logo.png" alt="CodeSquad.org Logo"></a></li>
-                    <li><a href="/">
-                        <i class="fa-brands fa-facebook-square"></i>
-                    </a></li>
-                    <li><a href="/">
-                        <i class="fa-brands fa-instagram-square"></i>
-                    </a></li>
-                    <li><a href="/">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a></li>
-                    <li>Developer: Kit Fenrir Amreik (they/she)</li>
-                    <li>Email: kitdamreik@gmail.com</li>
-                </ul>
-            </div>
-            <div>
-                <h2 class = "mini-container">Learn More About Class Structure</h2>
-                <p>["Creativity is intelligence having fun- Albert Einstein"]</p>
-                <p class="center-text-paragraph">
-                    <ul class="center-text-line-items">
-                        <li>What Does A Semester Look Like?</li>
-                        <br>
-                        <li>The Class Structure and Learning Flow</li>
-                        <br>
-                        <li>What Is The Impact After A Year Of Classes?</li>
-                        <!-- After more development -->
-                         <!-- F. Procceds: instructor payment/direct reparations opp.-->
-                    </ul>
-                </p>
-            </div>
-            <div class="link-styling">
-                <h2 class = "mini-container">Call to Action</h2>
-                <p class="center-text-paragraph">
-                    <ul class="center-text-line-items">
-                        <li>Donate Here</li>
-                        <br>
-                        <li>Collaborate & Capacity Build</li>
-                        <br>
-                        <li>Book a Practitioner</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="foot-bar">
-                <h2 class = "mini-container">Talk to Us :]</h2>
-                <form action="/">
-                    <legend>
-                        <fieldset>
-                            <label for="First and Last Name">First and Last Name:</label>
-                            <input type="text" name="First and Last Name" id="First and Last Name" placeholder="First and Last Name">
-                        </fieldset>
-                        <!-- <br> -->
-                        <fieldset>
-                            <label for="Email">Email Address</label>
-                            <input type="Email" name="Email" id="Email" placeholder="Email Address">
-                        </fieldset>
-                        <!-- <br> -->
-                        <fieldset>
-                            <label for="Phone">Phone Number</label>
-                            <input type="number" name="Phone" id="Phone" placeholder="Phone Number">
-                        </fieldset>
-                        <!-- <br> -->
-                        <section class= "center-button">
-                            <input type="Submit" class="yellow-button" value="Submit">
-                        </section>
-                    </legend>   
-                    <!-- After more development -->
-                        <!-- JS: console log and display in the browser as a confirmation/alert? -->
-                        <!-- Button and styling -->
-            </div>
-        </div>
-    </section>
-</footer>
-</body>
-</html>
+<!-- Insert footer.ejs -->
+<%- include('../partials/footer') -%> 

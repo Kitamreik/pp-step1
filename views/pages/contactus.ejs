@@ -1,48 +1,14 @@
-<!DOCTYPE html>
-<head>
-    <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/032df15d1f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <script defer src="./scripts/scripts.js"></script>
-</head>
-<body>
+<%- include('../partials/head') -%> 
+<!-- Insert header.ejs -->
     <title>Contact Us</title>
-    <header>
-        <!-- Updated Code 4-25 re: Hamburger Functionality [tested] -->
-        <div class="header-wrapper">
-            <div class = "link-styling mobile-container">
-                <a href="/"></a><img src ="/images/Cookie-logo.png" alt="A picture of an animal, with a cat-like smiling face with a turtle's body is the logo of this website.">
-                </a>
-            </div>
-            <nav class="nav-bar link-styling open-sesame"> 
-                <ul class="nav-bar-list left-text-line-items">
-                    <li><a href="/">Index</a></li>
-                    <li><a href="/videogallery">About</a></li>
-                    <li><a href="/login">Login</a></li>
-                </ul>
-            </nav>
-            <div class = "link-styling mobile-container">
-                <button class = "hamburger">
-                    <a href="javascript:void(0);" class="menu" for="open-sesame">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </button> 
-            </div>
-        </div>
-    </header>
+<%- include('../partials/nav') -%> 
+<!-- Insert nav.ejs -->
 <div class="content-container">
     <section class="content-container-section">
     <h1>Contact Us Page</h1>
     </section>
     <section class = "content-container-2">
-        <a href="/views/pages/contactus"></a><img src="/images/contact-us.jpeg" class= "photo-image" alt="On a black chalkboard, there is a depiction of an envelope, a phone and the at symbol over the word 'Contact Us', near a hand with chalk in the person's fingertips.">
+        <a href="/views/pages/contactus"></a><img src="/img/contact-us.jpeg" class= "photo-image" alt="On a black chalkboard, there is a depiction of an envelope, a phone and the at symbol over the word 'Contact Us', near a hand with chalk in the person's fingertips.">
         <div class="content-container-3">
             <p>Hello</p>
         </div>
@@ -52,7 +18,7 @@
         <!-- try CSS grid/ add flexbox? -->
         <!-- 5/2: cohort links for website/social media/ LinkedIn -->
         <div class="card mint">
-            <a href="/"></a><img src="/images/KIT.jpeg" class="template" alt="a picture of Kit, a Black woman smiling with a Black dress and flowers of varying colors, with a red rose in their right ear">
+            <a href="/"></a><img src="/img/KIT.jpeg" class="template" alt="a picture of Kit, a Black woman smiling with a Black dress and flowers of varying colors, with a red rose in their right ear">
             <div class="card-container">
                 <h3><b>Kit Fenrir Amreik (they/she)</b></h3> 
                 <br>
@@ -62,7 +28,7 @@
             </div>
         </div>
         <div class="card vivid-sky-blue">
-            <a href="/"></a><img src="/images/YESI.jpeg" class="template" alt="a picture of Yesinia JJ, a Black person with a pink afro and clear framed glasses looks at the camera">
+            <a href="/"></a><img src="/img/YESI.jpeg" class="template" alt="a picture of Yesinia JJ, a Black person with a pink afro and clear framed glasses looks at the camera">
             <div class="card-container">
                 <h3><b>Yesinia JJ (she/her)</b></h3> 
                 <br>
@@ -72,7 +38,7 @@
             </div>
         </div>
         <div class="card gold-crayola">
-            <a href="/"></a><img src="/images/KRIS.jpg" class="template" alt="a picture of Kristopher JT Toma-Lee, a 35 y/o genderqueer trans guy from Massachusetts. They are holding their phone, wearing a black undershirt and a green and blue shirt.">
+            <a href="/"></a><img src="/img/KRIS.jpg" class="template" alt="a picture of Kristopher JT Toma-Lee, a 35 y/o genderqueer trans guy from Massachusetts. They are holding their phone, wearing a black undershirt and a green and blue shirt.">
             <div class="card-container">
                 <h3><b>Kristopher JT Toma-Lee (they/he)</b></h3> 
                 <br>
@@ -82,7 +48,7 @@
             </div>
         </div>
         <div class="card medium-purple">
-            <a href="/"></a><img src="/images/CHELSEA.JPEG" class="template" alt="a picture of Chelsea Colby, a White person against a grey background, wearing a blue sweater, and smiling with leopard print glasses.">
+            <a href="/"></a><img src="/img/CHELSEA.JPEG" class="template" alt="a picture of Chelsea Colby, a White person against a grey background, wearing a blue sweater, and smiling with leopard print glasses.">
             <div class="card-container">
                 <h3><b>Chelsea Colby (she/they)</b></h3> 
                 <br>
@@ -92,7 +58,7 @@
             </div>
         </div>
         <div class="card orchid-crayola">
-            <a href="/"></a><img src="/images/CORI.jpeg" class="template" alt="a picture of Cori Falco, a White person with makeup on against a beach background, smiling with a light blue floral top">
+            <a href="/"></a><img src="/img/CORI.jpeg" class="template" alt="a picture of Cori Falco, a White person with makeup on against a beach background, smiling with a light blue floral top">
             <div class="card-container">
                 <h3><b>Cori Falco (she/her)</b></h3> 
                 <br>
@@ -102,7 +68,7 @@
             </div>
         </div>
         <div class="card mint">
-            <a href="/"></a><img src="/images/RACHEL.JPG" class="template" alt="a picture of Rachel Freed Sussman, a White person smiling and snuggled in a blanket against a beach background">
+            <a href="/"></a><img src="/img/RACHEL.JPG" class="template" alt="a picture of Rachel Freed Sussman, a White person smiling and snuggled in a blanket against a beach background">
             <div class="card-container">
                 <h3><b>Rachel Freed Sussman (any pronoun)</b></h3> 
                 <br>
@@ -112,7 +78,7 @@
             </div>
         </div>
         <div class="card vivid-sky-blue">
-            <a href="/"></a><img src="/images/THERESA.jpg" class="template" alt="a picture of Theresa Yannetty, a White person smiling with light makeup coupled with a stuffed animal in a chair">
+            <a href="/"></a><img src="/img/THERESA.jpg" class="template" alt="a picture of Theresa Yannetty, a White person smiling with light makeup coupled with a stuffed animal in a chair">
             <div class="card-container">
                 <h3><b>Theresa Yannetty (she/her)</b></h3> 
                 <br>
@@ -122,7 +88,7 @@
             </div>
         </div>
         <div class="card gold-crayola">
-            <a href="/"></a><img src="/images/TIM.jpg" class="template" alt="a picture of Timothy Scott Crumley, a White person smiling with a blue shirt, crosslegged against a neutral background">
+            <a href="/"></a><img src="/img/TIM.jpg" class="template" alt="a picture of Timothy Scott Crumley, a White person smiling with a blue shirt, crosslegged against a neutral background">
             <div class="card-container">
                 <h3><b>Timothy Scott Crumley (he/him)</b></h3> 
                 <br>
@@ -133,83 +99,5 @@
         </div>
     </section>
 </div>
-<footer class = "footer"> 
-    <section class = "bottom-row"> 
-        <div class = "border"> 
-            <div>
-                <h2 class = "mini-container">Developer Contact Info</h2>
-                <p class ="center-text-paragraph">A Product of CodeSquad</p>
-                <ul class="center-text-line-items link-styling">
-                    <li><a href="http://codesquad.org" target="'_blank"><img src="/images/CodeSquad-website-logo.png"alt="CodeSquad.org Logo"></a></li>
-                    <li><a href="/">
-                        <i class="fa-brands fa-facebook-square"></i>
-                    </a></li>
-                    <li><a href="/">
-                        <i class="fa-brands fa-instagram-square"></i>
-                    </a></li>
-                    <li><a href="/">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a></li>
-                    <li>Developer: Kit Fenrir Amreik (they/she)</li>
-                    <li>Email: kitdamreik@gmail.com</li>
-                </ul>
-            </div>
-            <div>
-                <h2 class = "mini-container">Learn More About Class Structure</h2>
-                <p>["Creativity is intelligence having fun- Albert Einstein"]</p>
-                <p class="center-text-paragraph">
-                    <ul class="center-text-line-items">
-                        <li>What Does A Semester Look Like?</li>
-                        <br>
-                        <li>The Class Structure and Learning Flow</li>
-                        <br>
-                        <li>What Is The Impact After A Year Of Classes?</li>
-                        <!-- After more development -->
-                         <!-- F. Procceds: instructor payment/direct reparations opp.-->
-                    </ul>
-                </p>
-            </div>
-            <div class="link-styling">
-                <h2 class = "mini-container">Call to Action</h2>
-                <p class="center-text-paragraph">
-                    <ul class="center-text-line-items">
-                        <li>Donate Here</li>
-                        <br>
-                        <li>Collaborate & Capacity Build</li>
-                        <br>
-                        <li>Book a Practitioner</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="foot-bar">
-                <h2 class = "mini-container">Talk to Us :]</h2>
-                <form action="/">
-                    <legend>
-                        <fieldset>
-                            <label for="First and Last Name">First and Last Name:</label>
-                            <input type="text" name="First and Last Name" id="First and Last Name" placeholder="First and Last Name">
-                        </fieldset>
-                        <!-- <br> -->
-                        <fieldset>
-                            <label for="Email">Email Address</label>
-                            <input type="Email" name="Email" id="Email" placeholder="Email Address">
-                        </fieldset>
-                        <!-- <br> -->
-                        <fieldset>
-                            <label for="Phone">Phone Number</label>
-                            <input type="number" name="Phone" id="Phone" placeholder="Phone Number">
-                        </fieldset>
-                        <!-- <br> -->
-                        <section class= "center-button">
-                            <input type="Submit" class="yellow-button" value="Submit">
-                        </section>
-                    </legend>   
-                    <!-- After more development -->
-                        <!-- JS: console log and display in the browser as a confirmation/alert? -->
-                        <!-- Button and styling -->
-            </div>
-        </div>
-    </section>
-</footer>
-</body>
-</html>
+<!-- Insert footer.ejs -->
+<%- include('../partials/footer') -%> 
