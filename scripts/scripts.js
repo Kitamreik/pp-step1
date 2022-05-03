@@ -17,6 +17,11 @@ hamburgerIcon.addEventListener("click", () => {
     navUl.classList.toggle("open-sesame");
 });
 
+// Date Method Test --> works 5/2
+let currentDate = Date();
+console.log(currentDate);
+alert (currentDate);
+
 
 
 
