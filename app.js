@@ -23,6 +23,8 @@ app.use(express.json());
 const indexRoutes = require('./routes/index-routes');
 app.use('/', indexRoutes);
 
+app.use(routes);
+
 // Mapping out Routes --> done
 // excel sheet
 
