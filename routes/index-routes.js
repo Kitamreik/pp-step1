@@ -4,7 +4,7 @@ const siteRoutes = require('./site-routes');
 
 const router = express.Router();
 
-router.use('/', siteRouter);
-router.use('/admin-console', adminRouter);
+router.use('/', siteRoutes);
+router.use('/admin-console', adminRoutes);
 
 module.exports = router;
