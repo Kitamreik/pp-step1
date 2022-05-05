@@ -19,6 +19,9 @@ hamburgerIcon.addEventListener("click", () => {
 
 // Date Method Test --> works 5/2
 let currentDate = Date();
+// remember that this is a variable you can use anywhere
+// controller --> sending data --> the logic --> use the date variable
+
 // console.log(currentDate);
 // alert (currentDate);
 
