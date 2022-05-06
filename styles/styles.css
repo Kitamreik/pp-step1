@@ -409,6 +409,7 @@ a.menu {
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
     width: 60%;
+    max-width: 300px;
     padding: 2.5%;
     border-radius: 5px;
     align-content: center;
@@ -429,6 +430,11 @@ a.menu {
 .gold-crayola {
     background-color: var(--gold-crayola);
 }
+
+.hot-pink {
+    background-color: var(--hot-pink);
+}
+
 
 /* .cornflower-blue {
     background-color: var(--cornflower--blue);
