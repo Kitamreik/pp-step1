@@ -1,0 +1,24 @@
+<%- include('../partials/head') -%> 
+<!-- Insert header.ejs -->
+<title>Admin</title>
+<%- include('../partials/admin-nav.ejs') -%> 
+<!-- Insert admin-nav.ejs -->
+
+<div class="content-container link-styling">
+    <section class="content-container-section">
+        <h1>Admin Console Page</h1>
+    </section>
+    <section class="content-container-2"> 
+        <div class="content-container-3 card mint">
+            <a href="/createlog"><h2>CREATE LOG</h2></a>
+        </div>
+        <div class="content-container-3 card vivid-sky-blue">
+            <a href="/updatelog"><h2>UPDATE LOG</h2></a>
+        </div>
+        <div class="content-container-3 card hot-pink">
+            <a href="/deletelog"><h2>DELETE LOG</h2></a>
+        </div>
+    </section>
+</div>
+<!-- Insert admin-footer.ejs -->
+<%- include('../partials/admin-footer.ejs') -%> 
