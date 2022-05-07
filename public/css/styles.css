@@ -55,6 +55,14 @@ body {
     color: var(--electric-blue);
 };
 
+.vivid-sky-blue-text {
+    color: var(--vivid-sky-blue);
+}
+
+.hot-pink-text {
+    color: var(--hot-pink);
+}
+
 .grad {
     height: auto;
     background-color: var(--blue-munsell , --electric-blue);
@@ -99,7 +107,12 @@ header {
 .link-styling a:active {
     color: var(--cosmic-latte);
     background-color: var(--hot-pink);
-    font-weight: bold;} 
+    font-weight: bold;
+} 
+
+.bold {
+    font-weight: bold;
+}
 
 .content-container {
     margin: 60px;
@@ -187,6 +200,10 @@ h2, p {
 
 .expansion {
     font-size: 1.8rem;
+}
+
+.minor-expansion {
+    font-size: 1.3rem;
 }
 
 /* for card headers */
@@ -409,6 +426,7 @@ a.menu {
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
     width: 60%;
+    max-width: 300px;
     padding: 2.5%;
     border-radius: 5px;
     align-content: center;
@@ -428,6 +446,23 @@ a.menu {
 
 .gold-crayola {
     background-color: var(--gold-crayola);
+}
+
+.hot-pink {
+    background-color: var(--hot-pink);
+}
+
+.naples-yellow {
+    background-color: var(--naples-yellow);
+}
+
+
+.light-steel-blue {
+    background-color: var(--light-steel-blue);
+}
+
+.cosmic-latte {
+    background-color: var(--cosmic-latte);
 }
 
 /* .cornflower-blue {
@@ -479,16 +514,3 @@ flex-direction: row;
     display: none; 
     }
 }
-
-/* ABOVE DONE */
-
-/* BELOW TO WORK ON */
-
-/* CONTACT US */
-/* table {
-
-} */
-
-/* button-styling {
-
-} */

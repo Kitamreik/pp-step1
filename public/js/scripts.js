@@ -19,5 +19,4 @@ hamburgerIcon.addEventListener("click", () => {
 
 // Date Method Test --> works 5/2
 let currentDate = Date();
-console.log(currentDate);
 alert (currentDate);
