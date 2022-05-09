@@ -2,23 +2,35 @@ const express = require('express');
 const data = require('../data/data');
 
 module.exports = {
-    index: (req, res) => {
-        res.render('pages/index', {
-            // key: value(object)
-            // ex. comicsArray: data
+    about: (req, res) => {
+        res.render('pages/videogallery', {
             data: data
         });
     },
-    about: (req, res) => {
-        res.render('pages/videogallery');
+    contact_us: (req, res) => {
+        res.render('pages/contactus', {
+            data: data
+        });
+    },
+    create_log: (req, res) => {
+        res.render('pages/createlog', {
+            data: data
+        });
+    },
+    delete_log: (req, res) => {
+        res.render('pages/deletelog', {
+            data: data
+        });
     },
     login: (req, res) => {
         res.render('pages/login', {
             data: data
         });
     },
-    contact_us: (req, res) => {
-        res.render('pages/contactus');
+    index: (req, res) => {
+        res.render('pages/index', {
+            data: data
+        });
     },
     map: (req, res) => {
         res.render('pages/map', {
@@ -26,6 +38,19 @@ module.exports = {
         });
     },
     photogallery: (req, res) => {
-        res.render('pages/photogallery');
+        res.render('pages/photogallery', {
+            data: data
+        });
+    },
+    tj_quiz: (req, res) => {
+        res.render('pages/tj-quiz');
+    },
+    tj_answers: (req, res) => {
+        res.render('pages/tj-answers');
+    },
+    update_log: (req, res) => {
+        res.render('pages/updatelog', {
+            data: data
+        });
     },
 };

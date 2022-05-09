@@ -8,6 +8,18 @@ router.route('/')
 router.route('/videogallery')
     .get(siteController.about);
 
+    // works in siteCtrl, not adminCtrl
+router.route('/createlog')
+    .get(siteController.create_log);
+
+router.route('/deletelog')
+    .get(siteController.delete_log);
+
+router.route('/updatelog')
+    .get(siteController.update_log);
+
+    // works in siteCtrl, not adminCtrl
+
 router.route('/login')
     .get(siteController.login);
 
@@ -19,5 +31,11 @@ router.route('/map')
 
 router.route('/photogallery')
     .get(siteController.photogallery);
-    
+
+router.route('/tj-quiz')
+    .get(siteController.tj_quiz);
+
+router.route('/tj-answers')
+    .get(siteController.tj_answers); 
+       
 module.exports = router;

@@ -110,6 +110,20 @@ header {
     font-weight: bold;
 } 
 
+/* Footer Links */
+.link-styling-footer a:hover {
+    color: var(--gold-crayola);
+    font-weight: bold;
+}
+
+.link-styling-footer a:active {
+    color: var(--cosmic-latte);
+    background-color: var(--hot-pink);
+    font-weight: bold;
+} 
+
+
+
 .bold {
     font-weight: bold;
 }
@@ -431,7 +445,9 @@ a.menu {
     transition: 0.3s;
     width: 60%;
     max-width: 300px;
-    padding: 2.5%;
+    padding: 7.5%;
+    padding-left: 7%;
+    padding-right: 7%;
     border-radius: 5px;
     align-content: center;
     display: flex;

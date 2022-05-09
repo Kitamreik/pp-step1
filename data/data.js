@@ -1,14 +1,20 @@
 const {v4: uuid} = require('uuid');
 
+let currentDate = Date();
+
 module.exports = [
   { 
-    //   potential data to be passed in from the form input - footer- Talk to Us :]
     id: uuid(),
-    // --> not really needed, used as a mimic, for now, will activate
+    // firstAndLastName: data,
+    // emailAddress: data,    
+    // phoneNumber: data
     /*
-    firstAndLastName: data // initial note w/o testing: registers as a number and not a string?
-    emailAddress: data
-    phoneNumber: data
+    // initial note w/o testing: registers as a number and not a string?
     */
+    // userName: '',
+    // year: currentDate.getFullYear(),
+    // signedIn: true
   }
 ];
+
+// schema
