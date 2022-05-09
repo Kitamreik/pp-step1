@@ -234,6 +234,10 @@ h3 {
     padding-right: 5%;
 } 
 
+.word-wrap {
+    word-wrap: break-word;
+}
+
 footer {
     background-color: var(--hot-pink);
     width: auto;
