@@ -30,8 +30,9 @@ body {
     --medium-champagne:#F7E8A4;
     --hot-pink:#FF57BB;
     --heliotrope-gray:#023B58;
-    /* New Colors 4-27 */
+    /* New Colors */
     --cornflower--blue: #89A1EF;
+    --emerald: #44CF6C;
     
     /* to enclose content */
     --light-steel-blue: #B8CDF8;
@@ -105,6 +106,18 @@ header {
 }
 
 .link-styling a:active {
+    color: var(--cosmic-latte);
+    background-color: var(--hot-pink);
+    font-weight: bold;
+} 
+
+/* Footer Links */
+.link-styling-footer a:hover {
+    color: var(--gold-crayola);
+    font-weight: bold;
+}
+
+.link-styling-footer a:active {
     color: var(--cosmic-latte);
     background-color: var(--hot-pink);
     font-weight: bold;
@@ -435,9 +448,13 @@ a.menu {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-/* Card Colors */
+/* Card/Background Container Colors */
 .mint {
     background-color: var(--magic-mint);
+}
+
+.emerald {
+    background-color: var(--emerald);
 }
 
 .vivid-sky-blue {
@@ -456,7 +473,6 @@ a.menu {
     background-color: var(--naples-yellow);
 }
 
-
 .light-steel-blue {
     background-color: var(--light-steel-blue);
 }
@@ -464,10 +480,6 @@ a.menu {
 .cosmic-latte {
     background-color: var(--cosmic-latte);
 }
-
-/* .cornflower-blue {
-    background-color: var(--cornflower--blue);
-} */
 
 .medium-purple {
     background-color: var(--medium-purple);
@@ -487,9 +499,6 @@ display: flex;
 margin-left: auto;
 margin-right: auto;
 width: 100%;
-/* flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; */
 }
 
 .card-container {
@@ -514,17 +523,3 @@ flex-direction: row;
     display: none; 
     }
 }
-
-/* ABOVE DONE */
-
-/* BELOW TO WORK ON */
-
-/* CONTACT US */
-/* table {
-
-} */
-
-/* button-styling {
-
-} */
-
