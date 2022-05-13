@@ -3,7 +3,9 @@ const router = express.Router();
 const siteController = require('../controllers/site-controller');
 
 router.route('/')
-    .get(siteController.index);
+    .get(siteController.index)
+    .post(siteController.index);
+// confirmation page
 
 router.route('/videogallery')
     .get(siteController.about);
