@@ -10,21 +10,6 @@ router.route('/')
 router.route('/videogallery')
     .get(siteController.about);
 
-    // works in siteCtrl, not adminCtrl
-router.route('/createlog')
-    .get(siteController.create_log);
-
-router.route('/deletelog')
-    .get(siteController.delete_log);
-
-router.route('/updatelog')
-    .get(siteController.update_log);
-
-    // works in siteCtrl, not adminCtrl
-
-router.route('/login')
-    .get(siteController.login);
-
 router.route('/contactus')
     .get(siteController.contact_us);
 
@@ -39,5 +24,53 @@ router.route('/tj-quiz')
 
 router.route('/tj-answers')
     .get(siteController.tj_answers); 
-       
+
+    // works in siteCtrl, not adminCtrl --> moved successfully
+/*
+router.route('/createlog')
+    .get(siteController.create_log);
+
+router.route('/deletelog')
+    .get(siteController.delete_log);
+
+router.route('/updatelog')
+    .get(siteController.update_log);
+*/
+
+    // works in siteCtrl, not adminCtrl --> moved successfully
+
+router.route('/login')
+    .get(siteController.login)
+    .post(siteController.login);
+    // PURPOSE: To allow Users to log in and see the admin-console
+
+router.route('/logout')
+// PURPOSE: Logs the user out if signed in
+    .get(siteController.logout);   
+
+router.route('/register')
+// PURPOSE: To see a register for and to create a new User
+    .get(siteController.register_get)
+    .post(siteController.register_post);
+
+
+
 module.exports = router;
+
+
+ // Activate Passport First
+/* Google authorization
+router.route('/auth/google')
+// PURPOSE: initiates Google authentication 
+    .get(siteController.auth_google);
+*/
+
+/* Google authorization --> redirection back to site
+router.route('/auth/google/NAME?')
+// PURPOSE: Redirect back to your site if successful or fails
+// NAME: tj-practitioner-directory ---> heroku
+    .get(siteController.index_redirect); 
+*/
+ 
+
+

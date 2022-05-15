@@ -22,6 +22,8 @@ app.use(express.json());
 const indexRoutes = require('./routes/index-routes');
 app.use('/', indexRoutes);
 
+// app.use(routes);
+
 //Server
 app.listen(PORT, () => {
     console.log(`The server is ready and all ears on port ${PORT}!`);
