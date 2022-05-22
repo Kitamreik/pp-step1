@@ -53,24 +53,21 @@ router.route('/register')
     .get(siteController.register_get)
     .post(siteController.register_post);
 
+router.route('/auth/google')
+// PURPOSE: initiates Google authentication 
+    .get(siteController.auth_google);
 
+router.route('/auth/google/index')
+    .get(siteController.index_redirect); 
+// PURPOSE: Redirect back to your site if successful or fails
+// NAME: tj-practitioner-directory ---> heroku
+    
 
 module.exports = router;
 
 
- // Activate Passport First
-/* Google authorization
-router.route('/auth/google')
-// PURPOSE: initiates Google authentication 
-    .get(siteController.auth_google);
-*/
 
-/* Google authorization --> redirection back to site
-router.route('/auth/google/NAME?')
-// PURPOSE: Redirect back to your site if successful or fails
-// NAME: tj-practitioner-directory ---> heroku
-    .get(siteController.index_redirect); 
-*/
+
  
 
 

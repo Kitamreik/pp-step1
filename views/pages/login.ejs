@@ -8,7 +8,7 @@
     <h1>Login Page</h1>
     </section>
     <section class="content-container-2">
-        <form action="/" method="post">
+        <form action="/admin" method="post">
             <legend>
                 <fieldset>
                     <label for="Username">Username </label>
@@ -21,7 +21,9 @@
                 </fieldset>
                 <br>
                 <section class= "center-button">
-                <input type="Submit"  class="yellow-button" value="Submit">
+                    <button class="yellow-button link-styling">
+                        <a href="/admin" role="button">Submit</a>
+                    </button>
                 </section>
                 <br>
                 <section class= "center-button">
@@ -33,5 +35,5 @@
         </form>
     </section>
 </div>
-<!-- Insert footer.ejs -->
-<%- include('../partials/footer') -%> 
+<!-- Insert admin-footer.ejs -->
+<%- include('../partials/admin-footer.ejs') -%> 

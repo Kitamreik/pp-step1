@@ -1,14 +1,17 @@
 const express = require('express');
 const data = require('../data/data');
+const User = require('../models/user-model');
+// const Footer = require('../models/footer-model');
+const passport = require('passport');
 
 module.exports = {
-    about: (req, res) => {
-        res.render('pages/videogallery', {
+    about: (request, response) => {
+        response.render('pages/videogallery', {
             data: data
         });
     },
-    contact_us: (req, res) => {
-        res.render('pages/contactus', {
+    contact_us: (request, response) => {
+        response.render('pages/contactus', {
             data: data
         });
     },
@@ -22,12 +25,12 @@ module.exports = {
     //         data: data
     //     });
     // },
-    login: (req, res) => {
-        res.render('pages/login', {
+    login: (request, response) => {
+        response.render('pages/login', {
             data: data
         });
     },
-    login_post: (req, res) => {
+    login_post: (request, response) => {
         const {username, password} = request.body;
         User.findOne({username: username}, (error, foundUser) => {
           if (error) {
@@ -39,30 +42,27 @@ module.exports = {
           };
        });
     },
-    logout: (req, res) => {
-        request.logout();
-        response.redirect('/')
+    logout: (request, response) => {
+        request.logout()
+        response.redirect('/login');
     },
-    index: (req, res) => {
-        res.render('pages/index', {
-            data: data
-            // insert user schema
-        });
+    index: (request, response) => {
+        response.render('pages/index');
     },
-    map: (req, res) => {
-        res.render('pages/map', {
+    map: (request, response) => {
+        response.render('pages/map', {
             data: data
         });
     },
-    photogallery: (req, res) => {
-        res.render('pages/photogallery', {
+    photogallery: (request, response) => {
+        response.render('pages/photogallery', {
             data: data
         });
     },
-    register_get: (req, res) => {
-        res.render('pages/register');
+    register_get: (request, response) => {
+        response.render('pages/register');
     },
-    register_post: (req, res) => {
+    register_post: (request, response) => {
         const {username, password} = request.body;
         User.register({username: username}, password, (error) => {
           if (error) {
@@ -75,23 +75,20 @@ module.exports = {
           };
         });
     },
-    tj_quiz: (req, res) => {
-        res.render('pages/tj-quiz');
+    tj_quiz: (request, response) => {
+        response.render('pages/tj-quiz');
     },
-    tj_answers: (req, res) => {
-        res.render('pages/tj-answers');
+    tj_answers: (request, response) => {
+        response.render('pages/tj-answers');
     },
-    // update_log: (req, res) => {
-    //     res.render('pages/updatelog', {
-    //         data: data
-    //     });
-    // },
-    
-    // Activate Passport First
-    
-    // auth_google: passport.authenticate('google', { scope: ['openid', 'profile', 'email']}),
-    // index_redirect: [passport.authenticate('google', {failureRedirect: '/login'}),
-    // function(req, res) {
-    //     res.redirect('/admin');
-    //     }]
+    update_log: (request, response) => {
+        response.render('pages/updatelog', {
+            data: data
+        });
+    },
+    auth_google: passport.authenticate('google', { scope: ['openid', 'profile', 'email']}),
+    index_redirect: [passport.authenticate('google', {failureRedirect: '/login'}),
+    function(req, res) {
+        res.redirect('/admin');
+    }]
 };
