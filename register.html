@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <html lang="en"></html>
+    <html lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <script defer src="./scripts/scripts.js"></script>
 </head>
 <body>
-    <title>Login</title>
+    <title>Register</title>
     <header>
         <div class="header-wrapper">
             <div class = "link-styling mobile-container">
@@ -25,7 +25,7 @@
                     <li><a href="index.html">Index</a></li>
                     <li><a href="videogallery.html">About</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li> <a href="tj-quiz.html">TJ Quiz</a></li>
+                    <li><a href="tj-quiz.html">TJ Quiz</a></li>
                 </ul>
             </nav>
             <div class = "link-styling mobile-container">
@@ -39,14 +39,14 @@
     </header>
 <div class="content-container">
     <section class="content-container-section">
-        <h1>Login Page</h1>
+    <h1>Register Page</h1>
     </section>
-    <section class="content-container-2 gold-crayola">
-        <form action="admin.html" method="POST">
+    <section class="content-container-2 medium-purple">
+        <form action="/" method="post">
             <legend>
                 <fieldset>
-                    <label for="Email">Email Address</label>
-                    <input type="Email" name="Email" id="Email" placeholder="Email" minlength="10" required />
+                    <label for="Username">Username </label>
+                    <input type="text" name="Username" id="Username" placeholder="Username" required />
                 </fieldset>
                 <br>
                 <fieldset>
@@ -56,13 +56,13 @@
                 <br>
                 <section class= "center-button">
                     <button class="yellow-button link-styling">
-                        <a href="/admin.html" role="button">Submit</a>
+                        <a href="login.html" role="button">Submit</a>
                     </button>
                 </section>
                 <br>
                 <section class= "center-button">
                     <button class="yellow-button link-styling">
-                        <a href="/auth/google" role="button">Sign In with Google</a>
+                        <a href="/auth/google" role="button">Sign Up with Google</a>
                     </button>
                 </section>
             </legend>
@@ -85,4 +85,3 @@
 </footer>
 </body>
 </html>
-
